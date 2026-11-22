@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Portfolio: Jordan Ellis</title>
+<style>
+:root {
+  --ink: #1d2433; --muted: #5a6274; --paper: #faf7f2; --card: #ffffff;
+  --accent: #8a5a2b; --rule: #e6dfd3; --navy: #1f2f4d;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; scroll-padding-top: 64px; }
+body { margin: 0; background: var(--paper); color: var(--ink);
+  font: 17px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+h1, h2, h3, h4 { font-family: Georgia, "Times New Roman", serif; line-height: 1.25; }
+a { color: var(--accent); }
+.wrap { max-width: 760px; margin: 0 auto; padding: 0 20px 64px; }
+.note { font-size: 14px; color: var(--muted); border: 1px dashed var(--rule); border-radius: 8px;
+  padding: 10px 14px; margin: 20px 0 0; background: #fff; }
+.note p { margin: 0; }
+nav { position: sticky; top: 0; z-index: 5; background: var(--navy); }
+nav .inner { max-width: 760px; margin: 0 auto; display: flex; gap: 6px; overflow-x: auto;
+  padding: 10px 20px; scrollbar-width: none; }
+nav a { flex: none; color: #fff; text-decoration: none; font-size: 14px; padding: 6px 12px;
+  border: 1px solid rgba(255,255,255,.35); border-radius: 999px; white-space: nowrap; }
+nav a:hover, nav a:focus { background: rgba(255,255,255,.15); }
+.hero { padding: 40px 0 8px; }
+.eyebrow { text-transform: uppercase; letter-spacing: .14em; font-size: 12px; color: var(--accent); margin: 0; font-weight: 600; }
+.hero h1 { font-size: 40px; margin: 6px 0 4px; color: var(--navy); }
+.school { margin: 0; color: var(--muted); }
+.contact { margin: 4px 0 0; font-size: 15px; color: var(--muted); word-break: break-word; }
+.profile, .entry, .closing { background: var(--card); border: 1px solid var(--rule); border-radius: 14px;
+  padding: 22px 22px 8px; margin-top: 24px; }
+.profile h2, .closing h2 { margin-top: 0; font-size: 24px; color: var(--navy); }
+.entry-label { margin: 0; font-size: 13px; text-transform: uppercase; letter-spacing: .12em;
+  color: var(--accent); font-weight: 600; }
+.entry h2 { margin: 4px 0 14px; font-size: 26px; color: var(--navy); }
+.entry h4 { font-size: 18px; margin: 22px 0 6px; padding-top: 14px; border-top: 1px solid var(--rule); color: var(--navy); }
+.entry h4:first-of-type { border-top: none; padding-top: 0; margin-top: 8px; }
+.entry ul { padding-left: 20px; }
+.entry li { margin-bottom: 8px; }
+footer { text-align: center; font-size: 13px; color: var(--muted); margin-top: 40px; }
+@media (max-width: 520px) {
+  body { font-size: 16px; }
+  .hero h1 { font-size: 32px; }
+  .entry h2 { font-size: 22px; }
+  .profile, .entry, .closing { padding: 18px 16px 4px; border-radius: 12px; }
+  .contact span[aria-hidden] { display: none; }
+  .contact a, .contact span { display: block; }
+}
+</style>
+</head>
+<body>
+<nav aria-label="Portfolio sections"><div class="inner"><a href="#profile">Profile</a><a href="#entry-1-workplace-law-watch-a-daily-empl">Entry 1</a><a href="#entry-2-footnote-support-checker-a-cite-">Entry 2</a><a href="#entry-3-pace-card-a-running-app-for-my-p">Entry 3</a><a href="#next-entries">Next Entries</a></div></nav>
+<main class="wrap">
+<div class="note"><p><em>Sample only. Jordan Ellis is a fictional student, and every name, number, and link below is invented to model the Project 3 source document. Bracketed links are placeholders.</em></p></div>
+<header class="hero" id="profile">
+  <p class="eyebrow">AI Portfolio</p>
+  <h1>Jordan Ellis</h1>
+  <p class="school">Howard University School of Law, J.D. expected May 2028</p>
+  <p class="contact"><a href="mailto:jordan.ellis.law@example.com">jordan.ellis.law@example.com</a><span aria-hidden="true"> | </span><span>linkedin.com/in/[placeholder]</span></p>
+</header>
+<section class="profile">
+  <h2>Profile</h2>
+  <p><strong>Focus.</strong> I am preparing for a career in plaintiff-side employment law, ideally at a small firm or a legal aid organization that represents workers in wage and discrimination cases.</p><p><strong>How I work with AI.</strong> I use AI to draft, organize, and find things faster, and I check its work before I rely on it. Every legal source an AI tool gives me gets opened and read, because this semester my own briefing linked to a court opinion that did not say what the summary claimed. I do not let AI decide whether a client has a claim, and I do not put client information into a consumer AI tool. The biggest change this semester is that I now write the instructions and the test cases before I ask a tool for anything.</p>
+</section><article class="entry" id="entry-1-workplace-law-watch-a-daily-empl">
+  <p class="entry-label">Entry 1</p>
+  <h2>Workplace Law Watch, a Daily Employment Law Briefing</h2>
+  <h4>Summary</h4>
+<p>Workplace Law Watch is a scheduled AI briefing that delivers the previous day's most important employment law developments to me every weekday morning, so that I can follow the field I plan to practice in.</p>
+<h4>The problem</h4>
+<p>A plaintiff-side employment lawyer has to track new decisions from the federal courts, guidance and enforcement actions from the EEOC and the Department of Labor, and state wage and hour changes, especially in Maryland, Virginia, and D.C. Before this project, I kept up by skimming one newsletter a week when I remembered. I missed things. In September, a classmate asked me about a new EEOC guidance document that I had never heard of, even though it was two weeks old.</p>
+<h4>What I built</h4>
+<p>I built the briefing as a scheduled task in Claude. It runs at 6:30 a.m. on weekdays and covers federal employment decisions, EEOC and Department of Labor announcements, and wage and hour law in Maryland, Virginia, and D.C. It checks agency newsrooms and court opinion pages first, before general news sites. Three rules in my instructions matter most:</p>
+<ul>
+<li><strong>Every item must link to a source the tool located and read.</strong> This rule keeps the tool from summarizing news it never opened.</li>
+<li><strong>Each item must state the date of the development, not the date of the article.</strong> Old developments in new articles were my most common early error.</li>
+<li><strong>If there is nothing significant, the briefing must say so.</strong> Without this rule, the tool padded slow days with minor items.</li>
+</ul>
+<h4>How I tested it</h4>
+<p>Over six weekday runs, I opened every link and checked every date and every summary against its source. The briefings contained 23 items. Of those, 17 were fully supported by the linked source, 4 were partly supported, and 2 were not supported. One of the unsupported items described a Fourth Circuit opinion as holding something that appeared only in the dissent. I also found 3 items whose dates were wrong because the tool used the article's publication date.</p>
+<h4>What I changed</h4>
+<p>First, I added the rule requiring the date of the development. In the four runs after that change, every date was correct. Second, after the Fourth Circuit error, I added an instruction that any summary of a court decision must identify whether it describes the majority, a concurrence, or a dissent. That change helped, but it did not solve the problem. In a later run, the tool labeled a majority holding correctly but overstated its scope, so I still read every opinion the briefing describes before I rely on it.</p>
+<h4>Limits and supervision</h4>
+<p>The briefing cannot reach paywalled sources such as Law360, so it misses developments that appear only there. It sometimes treats a press release as if it were the underlying decision. It is a starting point, not research. Before I rely on any item, I open the primary source, confirm the date, and confirm which part of the decision the summary describes. I would never cite an item from the briefing without reading the source myself.</p>
+<h4>What this shows</h4>
+<ul>
+<li><strong>I verify AI output against primary sources.</strong> My verification table records all 23 items, with my findings for each.</li>
+<li><strong>I revise a tool based on evidence.</strong> Each change to my instructions responded to a specific error I documented.</li>
+<li><strong>I know the limits of what I build.</strong> I can state exactly what the briefing misses and what I do about it.</li>
+</ul>
+<h4>See it</h4>
+<p>[Link to a published sample briefing]</p>
+</article><article class="entry" id="entry-2-footnote-support-checker-a-cite-">
+  <p class="entry-label">Entry 2</p>
+  <h2>Footnote Support Checker, a Cite-Checking Assistant</h2>
+  <h4>Summary</h4>
+<p>Footnote Support Checker is an AI tool I built for my law journal cite-checking assignments: it compares an author's footnoted claim with the text of the cited source and flags where the source may not support the claim.</p>
+<h4>The problem</h4>
+<p>As a staff editor, I cite-check about 30 footnotes per assignment. The hardest part is not formatting. It is deciding whether the cited page actually supports the author's sentence. That check takes me 10 to 15 minutes per footnote, and when I am tired I miss mismatches. On my first assignment, my editor caught two unsupported footnotes that I had approved.</p>
+<h4>What I built</h4>
+<p>I built the tool as a Claude artifact. I paste the author's sentence, the footnote, and the text of the cited page. The tool returns one of three ratings (supported, partly supported, or not supported), quotes the passage it relied on, and states whether the signal, such as <em>see</em> or <em>cf.</em>, fits the relationship between the claim and the source. Three design choices matter most:</p>
+<ul>
+<li><strong>It must quote the passage it relied on.</strong> I can check the quote in seconds, and a rating without a quote is worthless to me.</li>
+<li><strong>It works only from the text I paste.</strong> It does not search the web or rely on its memory of a case, so it cannot invent a source.</li>
+<li><strong>When in doubt, it rates down.</strong> I would rather recheck a supported footnote than approve an unsupported one.</li>
+</ul>
+<h4>How I tested it</h4>
+<p>I ran the tool on 40 footnotes that my editor and I had already checked by hand. It agreed with our final judgment on 33. It flagged 5 footnotes as partly supported that we had approved; on review, 2 of those were real problems we had missed. It rated 2 footnotes as supported that we had marked unsupported. Those 2 errors are the dangerous kind, and both involved a source that used the same words as the author in a different context.</p>
+<h4>What I changed</h4>
+<p>After the two false approvals, I added an instruction requiring the tool to state the context of the quoted passage, such as whether it describes the court's holding, a party's argument, or background. In a second test on 15 new footnotes, it made no false approvals. Its signal analysis remained weak, so I now treat that part of its output as a prompt to look, not as an answer.</p>
+<h4>Limits and supervision</h4>
+<p>The tool sees only the page I paste, so it cannot tell me whether a better source exists or whether a case has been overruled. It cannot read scanned images well. I use it as a second reader after my own check, not as a substitute for it, and I make every final call myself. I paste only published sources, never an author's unpublished draft beyond the sentence at issue.</p>
+<h4>What this shows</h4>
+<ul>
+<li><strong>I can identify a task worth improving.</strong> I measured the cost of the task and the errors I was making before I built anything.</li>
+<li><strong>I design tools to make their errors visible.</strong> The required quote lets me check each rating quickly.</li>
+<li><strong>I test against a known answer.</strong> I compared the tool with 40 footnotes whose answers I already knew.</li>
+</ul>
+<h4>See it</h4>
+<p>[Link to the published Footnote Support Checker]</p>
+</article><article class="entry" id="entry-3-pace-card-a-running-app-for-my-p">
+  <p class="entry-label">Entry 3</p>
+  <h2>Pace Card, a Running App for My Phone</h2>
+  <h4>Summary</h4>
+<p>Pace Card is a web app I built with Claude Code and installed on my phone; it turns a race goal into a pace plan I can check during a run.</p>
+<h4>The problem</h4>
+<p>I am training for the Marine Corps Marathon. On long runs I kept stopping to do pace math on my phone's calculator, such as converting a goal finish time into a pace per mile, or working out how far behind schedule I was at mile 9. Every running app I tried required an account, showed ads, or buried the one number I needed.</p>
+<h4>What I built</h4>
+<p>I described the app to Claude Code and built it over three sessions, then published it on GitHub Pages and added it to my phone's home screen. It has two features. The first converts a goal finish time and race distance into a target pace and a split for every mile. The second, a check-in screen, lets me enter my current mile and elapsed time and tells me in large type whether I am ahead of or behind my plan, and by how much. I made three design decisions myself:</p>
+<ul>
+<li><strong>Large numbers, few buttons.</strong> I use the app while running, so every screen had to be readable at a glance and usable with one thumb.</li>
+<li><strong>No account and no data leaving the phone.</strong> The app saves my plans on the device.</li>
+<li><strong>Miles first, kilometers on request.</strong> Most races I run use miles.</li>
+</ul>
+<h4>How I tested it</h4>
+<p>I used the app on five runs over nine days and checked every calculation against a printed pace chart. On the first run, the check-in screen was wrong whenever my elapsed time passed one hour, because it misread times like 1:05:30. I logged that error and two others in my build log.</p>
+<h4>What I changed</h4>
+<p>First, I directed Claude Code to fix the time parsing and to add tests for times over one hour. Every calculation matched the pace chart after that change. Second, after a run in bright sun, I asked for a high-contrast mode, because I could not read the gray text outdoors. That change worked. I also asked Claude Code to add a GPS feature and then removed it, because it drained my battery and was not something I needed.</p>
+<h4>Limits and supervision</h4>
+<p>The app does not track my location or time automatically; I enter the numbers myself. It assumes an even pace, so it does not account for hills. Because Claude Code wrote the code, I tested every calculation against an independent source instead of trusting that the code was correct.</p>
+<h4>What this shows</h4>
+<ul>
+<li><strong>I can direct an AI coding tool to build something real.</strong> I wrote the requirements, made the design calls, and corrected the tool three times.</li>
+<li><strong>I test with real use.</strong> I found the most important bug on an actual run, not by reading the code.</li>
+<li><strong>I cut features that do not serve the user.</strong> Removing GPS made the app better.</li>
+</ul>
+<h4>See it</h4>
+<p>[Link to Pace Card on GitHub Pages]</p>
+</article><section class="closing" id="next-entries"><h2>Next Entries</h2><p>I plan to add an entry for a client intake checklist tool I am building for a legal aid organization's volunteer program, using only fictional test data, after I finish testing it in January.</p></section>
+<footer>Jordan Ellis | AI Portfolio</footer>
+</main>
+</body>
+</html>
